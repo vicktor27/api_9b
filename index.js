@@ -53,6 +53,6 @@ app.post("/send", (req, res) => {
   res.status(200).send("Data received succesfuly");
 });
 
-app.listen(3001, () => {
+app.listen(3000, () => {
   console.log("Servidor Ejecutandose en http://localhost:3001");
 });
