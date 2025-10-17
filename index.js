@@ -15,6 +15,11 @@ app.post("/createCard", async (req, res) => {
   }
 });
 
+app.patch("/updateCard", async (req, res) => {
+  try {
+  } catch (error) {}
+});
+
 app.get("/getAllCards", async (req, res) => {
   try {
     const card = await Card.find();
