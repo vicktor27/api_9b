@@ -15,6 +15,11 @@ app.post("/createCard", async (req, res) => {
   }
 });
 
+app.patch("/updateCard", async (req, res) => {
+  try {
+  } catch (error) {}
+});
+
 app.get("/getAllCards", async (req, res) => {
   try {
     const card = await Card.find();
@@ -43,6 +48,10 @@ app.get("/hello", (req, res) => {
 });
 
 app.get("/hola", (req, res) => {
+  res.status(200).send("Hello World");
+});
+
+app.get("/test", (req, res) => {
   res.status(200).send("Hello World");
 });
 
