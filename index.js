@@ -51,6 +51,10 @@ app.get("/hola", (req, res) => {
   res.status(200).send("Hello World");
 });
 
+app.get("/test", (req, res) => {
+  res.status(200).send("Hello World");
+});
+
 app.post("/send", (req, res) => {
   const { user, email } = req.body;
   console.log("Datos recibidos: " + user + " " + email);
